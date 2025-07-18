@@ -1,5 +1,5 @@
 import os
-from mistralai import Mistral
+from mistralai import mistral
 import streamlit as st
 from dotenv import load_dotenv
 
