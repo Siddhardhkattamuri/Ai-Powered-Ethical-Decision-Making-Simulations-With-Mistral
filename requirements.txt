@@ -1,3 +1,4 @@
 streamlit
-git+https://github.com/mistralai/client-python.git
+mistralai
+python-dotenv
 langchain
