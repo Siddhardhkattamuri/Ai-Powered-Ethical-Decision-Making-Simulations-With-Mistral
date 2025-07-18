@@ -1,3 +1,0 @@
-streamlit
-git+https://github.com/mistralai/client-python.git
-langchain
