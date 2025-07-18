@@ -1,6 +1,7 @@
 import os
 from mistralai import Mistral
 import streamlit as st
+from dotenv import load_dotenv
 
 # Page Config
 st.set_page_config(
@@ -9,9 +10,13 @@ st.set_page_config(
     layout="centered"
 )
 
-# Mistral API Setup
-api_key = "wr3peE7ZQUxQOboyZ7vYHaCLMgXPbIeV"
+# Load environment variables from .env
+load_dotenv()
+
+# Get API key from environment variable
+api_key = os.getenv("MISTRAL_API_KEY")
 model = "mistral-medium"
+
 client = Mistral(api_key=api_key)
 
 # Advanced UI Styles
