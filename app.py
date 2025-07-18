@@ -1,6 +1,6 @@
 import os
 from mistralai.client import MistralClient
-from mistralai.models.chat_completion import ChatMessage
+from mistralai.models.chat import ChatMessage
 import streamlit as st
 from dotenv import load_dotenv
 
