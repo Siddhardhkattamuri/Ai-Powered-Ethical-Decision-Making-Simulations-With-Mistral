@@ -4,6 +4,8 @@ from mistralai.models.chat_completion import ChatMessage
 import streamlit as st
 from dotenv import load_dotenv
 
+
+
 # Page Config
 st.set_page_config(
     page_title="Ethical Reasoning Engine",
@@ -17,7 +19,7 @@ load_dotenv()
 # Mistral API Setup (using Streamlit secrets)
 api_key = st.secrets["mistral"]["api_key"]
 model = st.secrets["mistral"]["model"]
-client = Mistral(api_key=api_key)
+client = MistralClient(api_key=api_key)
 
 
 # Advanced UI Styles
