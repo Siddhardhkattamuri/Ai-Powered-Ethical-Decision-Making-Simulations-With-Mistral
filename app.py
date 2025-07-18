@@ -13,11 +13,11 @@ st.set_page_config(
 # Load environment variables from .env
 load_dotenv()
 
-# Get API key from environment variable
-api_key = os.getenv("MISTRAL_API_KEY")
-model = "mistral-medium"
-
+# Mistral API Setup (using Streamlit secrets)
+api_key = st.secrets["mistral"]["api_key"]
+model = st.secrets["mistral"]["model"]
 client = Mistral(api_key=api_key)
+
 
 # Advanced UI Styles
 st.markdown("""
